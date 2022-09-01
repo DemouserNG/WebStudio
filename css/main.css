@@ -126,6 +126,12 @@ img {
 .logo:hover, .logo:focus {
   color: var(--accent, blue);
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
 .logo--accent-color {
   color: var(--accent, blue);
@@ -644,6 +650,21 @@ img {
             align-items: baseline;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer .conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: start;
+    gap: 0;
+  }
+}
 
 .footer-text {
   margin-bottom: 8px;
@@ -652,6 +673,11 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .footer-text {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts {
@@ -702,7 +728,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 70px;
 }
+
 .social-links-title {
   margin-bottom: 20px;
   color: var(--footer-text-color);
@@ -712,6 +740,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .social-links-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -724,9 +753,11 @@ img {
           justify-content: center;
   gap: 10px;
 }
+
 .social-links-icon {
   fill: var(--social-links-color);
 }
+
 .social-links-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1016,6 +1047,12 @@ img {
   background-color: #188CE8;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: auto;
+  }
+}
+
 .footer-form-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -1035,6 +1072,18 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+  }
 }
 
 .footer-input {

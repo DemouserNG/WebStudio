@@ -10,11 +10,18 @@
 }
 
 .filter-items {
-    max-width: 370px;
+    // max-width: 370px;
 }
 
 .filter-items {
-    width: calc((100% - 60px) / 3);
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 60px) / 3); 
+        }
+   
 }
 
 .filter-link {

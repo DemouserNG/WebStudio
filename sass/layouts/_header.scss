@@ -1,0 +1,115 @@
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+.header__conteiner  {
+     display: flex;
+     align-items: center;
+ }
+.logo {
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent, blue);
+    }
+
+}
+.logo--accent-color {
+    color: var(--accent, blue);
+}
+// --------navigation-----
+.navigation {
+    display: flex;
+}
+.navigation__navigation-list {
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+    column-gap: 50px;
+}
+.navigation-list__link {
+    color: var(--primery-text-color, black);
+    font-size: 14px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
+    &:hover,
+    &:focus {
+        color: var(--accent, blue);
+    }
+}
+.navigation-list__link--active {
+    color: var(--accent, blue);
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background: #2196F3;
+        border-radius: 2px;
+    }
+
+}
+
+/* -------connect---------- */
+.connect-header {
+    display: flex;
+    margin-left: auto;
+    column-gap: 50px;
+}
+.connect__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color, grey);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent);
+    }
+}
+
+.connect__mail {
+    fill: #757575;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .connect__link:hover &,
+    .connect__link:focus & {
+        fill: var(--accent);
+    }
+
+}
+
+.connect__tell {
+    fill: #757575;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .connect__link:hover &,
+    .connect__link:focus & {
+        fill: var(--accent);
+    }
+
+}

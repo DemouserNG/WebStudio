@@ -141,6 +141,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
 }
 
 .navigation__navigation-list {
@@ -195,6 +196,7 @@ img {
   -webkit-column-gap: 50px;
      -moz-column-gap: 50px;
           column-gap: 50px;
+  display: none;
 }
 
 .connect__link {

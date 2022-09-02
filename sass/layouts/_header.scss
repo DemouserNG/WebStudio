@@ -31,6 +31,7 @@
 // --------navigation-----
 .navigation {
     display: flex;
+    display: none;
 }
 .navigation__navigation-list {
     display: flex;
@@ -75,6 +76,7 @@
     display: flex;
     margin-left: auto;
     column-gap: 50px;
+    display: none;
 }
 .connect__link {
     display: flex;

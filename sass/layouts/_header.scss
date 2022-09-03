@@ -86,9 +86,13 @@
 /* -------connect---------- */
 .connect-header {
    margin-left: auto;
-   
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+
     @media screen and (max-width: 767px) {
         display: none; 
+        
     }
    
     @media screen and (min-width: 1200px) {
@@ -103,7 +107,7 @@
     align-items: center;
     gap: 10px;
     color: var(--text-color, grey);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -113,6 +117,9 @@
     &:focus {
         color: var(--accent);
     }
+         @media screen and (min-width: 1200px) {
+            font-size: 14px;
+         }
 }
 
 .connect__mail {
@@ -199,15 +206,12 @@
     color: var(--accent);
 }
 
-.mob-connect {
-    margin-bottom: 64px;
-}
-
 .mob-connect__items:not(:last-child) {
      margin-bottom: 32px;
 }
 
 .mob-connect__link-tel {
+    
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
@@ -226,10 +230,12 @@
 
 .mob-soc-list {
     display: flex;
-    gap: 20px;
+    // gap: 20px;
     
 }
 .mob-soc-list__item:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
 
 

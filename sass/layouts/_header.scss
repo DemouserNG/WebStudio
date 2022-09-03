@@ -55,7 +55,7 @@
     color: var(--primery-text-color, black);
     font-size: 14px;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 36px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -65,6 +65,9 @@
     &:focus {
         color: var(--accent, blue);
     }
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 32px;
+        }
 }
 .navigation-list__link--active {
     color: var(--accent, blue);

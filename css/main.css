@@ -49,12 +49,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -177,7 +171,7 @@ img {
   color: var(--primery-text-color, black);
   font-size: 14px;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 36px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -186,6 +180,11 @@ img {
 }
 .navigation-list__link:hover, .navigation-list__link:focus {
   color: var(--accent, blue);
+}
+@media screen and (min-width: 1200px) {
+  .navigation-list__link {
+    padding-bottom: 32px;
+  }
 }
 
 .navigation-list__link--active {
